@@ -13,5 +13,6 @@
 # export FLASK_ENV=development
 # unset FLASK_ENV
 # não é uma boa pratia, fazer pip freeze ou pip list para preencher o requirements.txt
-# nunca usar import app em outros arquivos, se não de teste.
-# factorys, funções, melhor jeito de trabalhar com flask
+# factorys, funções ou classes que podem ser invocadas no futuro, melhor jeito de trabalhar com flask
+# conveções: chamar de create_app a factory principal, chamar de init_app a factory de cada uma das extenções separadamente
+# nunca usar import app em outros arquivos, no máximo o import create_app, a não ser em casos especificos de teste.

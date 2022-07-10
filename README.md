@@ -13,3 +13,5 @@
 # export FLASK_ENV=development
 # unset FLASK_ENV
 # não é uma boa pratia, fazer pip freeze ou pip list para preencher o requirements.txt
+# nunca usar import app em outros arquivos, se não de teste.
+# factorys, funções, melhor jeito de trabalhar com flask

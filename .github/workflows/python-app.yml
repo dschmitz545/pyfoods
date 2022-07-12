@@ -31,7 +31,7 @@ jobs:
       run: |
         make install
 
-      name: Database Migrations
+    - name: Database Migrations
       run: |
         make init_db
 

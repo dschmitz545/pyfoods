@@ -13,6 +13,7 @@ clean:
 	pip install -e .[dev] --upgrade --no-cache
 
 install:
+	pip install --upgrade pip
 	pip install -e .['dev']
 
 test:

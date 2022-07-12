@@ -17,4 +17,3 @@ def about():
 @bp.route("/restaurants")
 def restautants():
     return(render_template("restaurants.html"))
-

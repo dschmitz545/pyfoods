@@ -16,5 +16,9 @@ install:
 	pip install --upgrade pip
 	pip install -e .['dev']
 
+init_db:
+	FLASK_APP=ElectrumFood/app.py flask create-db
+	FLASK_APP=ElectrumFood/app.py flask db upgrade
+
 test:
-	pytest tests/ -v --cov=ElectrumFood
+	FLASK_ENV=test pytest tests/ -v --cov=ElectrumFood

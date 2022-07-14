@@ -1,6 +1,5 @@
-
-def test_app_is_created(app):# injeção de depêndencia
-    assert app.name == 'ElectrumFood.app'
+def test_app_is_created(app):  # injeção de depêndencia
+    assert app.name == "ElectrumFood.app"
 
 
 def test_config_is_loaded(config):

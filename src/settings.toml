@@ -1,0 +1,31 @@
+[default]
+DEBUG = false
+FLASK_ADMIN_SWATCH = "united"
+ADMIN_NAME = "ElectrumFoods default"
+ADMIN_TEMPLATE_MODE = "bootstrap3"
+EXTENSIONS = [
+    "ElectrumFood.ext.db:init_app",
+    "ElectrumFood.ext.auth:init_app",
+    "ElectrumFood.ext.admin:init_app",
+    "ElectrumFood.ext.migrate:init_app",
+    "ElectrumFood.ext.cli:init_app",
+    "ElectrumFood.ext.site:init_app",
+    "ElectrumFood.ext.hooks:init_app",
+]
+
+[development]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = "sqlite:///delivery.db"
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = true
+ADMIN_NAME = "ElectrumFoods Dev"
+EXTENSIONS = [
+    "dynaconf_merge",
+    "ElectrumFood.ext.toolbar:init_app",
+]
+
+[production]
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_DATABASE_URI = "mysql:///..."

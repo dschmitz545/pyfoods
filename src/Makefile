@@ -22,3 +22,13 @@ init_db:
 
 test:
 	FLASK_ENV=test pytest tests/ -v --cov=ElectrumFood
+
+format:
+	isort **/*.py
+	black -l 79 **/*.py
+
+run_dev:
+	FLASK_APP=ElectrumFood/app.py FLASK_ENV=development flask run
+
+run:
+	FLASK_APP=ElectrumFood/app.py FLASK_ENV=production flask run

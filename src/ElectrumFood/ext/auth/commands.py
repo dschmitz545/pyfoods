@@ -8,17 +8,17 @@ def list_user():
     click.echo(f"lista de usuários: {users}")
 
 
-@click.option("--email1", "-e")
-@click.option("--passwd1", "-p")
-@click.option("--admin1", "-a", is_flag=True, default=False)
-@click.option("--name1", "-n")
-def add_user(email1, passwd1, admin1, name1):
+@click.option("--email_usu", "-e")
+@click.option("--passwd_usu", "-p")
+@click.option("--admin_usu", "-a", is_flag=True, default=False)
+@click.option("--name_usu", "-n")
+def add_user(email_usu, passwd_usu, admin_usu, name_usu):
     """Adiciona um novo usuário"""
     user = User(
-        email=email1,
-        passwd=passwd1,
-        admin=admin1,
-        nome=name1
+        email=email_usu,
+        passwd=passwd_usu,
+        admin=admin_usu,
+        nome=name_usu
     )
     db.session.add(user)
     db.session.commit()

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <DatabaseModel VersionId="2.3">
-    <Name>electrumfoods</Name>
+    <Name>ElectrumFoods</Name>
     <Description></Description>
     <DatabaseEngine>
         <Name>sqlite</Name>

@@ -12,14 +12,15 @@ EXTENSIONS = [
     "ElectrumFood.ext.site:init_app",
     "ElectrumFood.ext.hooks:init_app",
 ]
+UPLOAD_FOLDER = "uploads"
 
 [development]
 DEBUG = true
 SQLALCHEMY_DATABASE_URI = "sqlite:///delivery.db"
-SQLALCHEMY_TRACK_MODIFICATIONS = false
+SQLALCHEMY_TRACK_MODIFICATIONS = true
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
 DEBUG_TB_PROFILER_ENABLED = true
-DEBUG_TB_INTERCEPT_REDIRECTS = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false
 ADMIN_NAME = "ElectrumFoods Dev"
 EXTENSIONS = [
     "dynaconf_merge",

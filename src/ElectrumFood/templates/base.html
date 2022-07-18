@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello Bulma!</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    {% endblock head %}
+    {% endblock %}
 
-    {% block extra_css %}{% endblock extra_css %}
+    {% block extra_css %}{% endblock %}
 </head>
 
 <body>
@@ -38,6 +38,10 @@
                     Restaurantes
                 </a>
 
+                <a class="navbar-item" href={{ url_for('site.about') }}>
+                    Sobre
+                </a>
+
                 <div class="navbar-item has-dropdown is-hoverable">
                     <a class="navbar-link">
                         More
@@ -54,8 +58,8 @@
                             Hamburger
                         </a>
                         <hr class="navbar-divider">
-                        <a class="navbar-item" href={{ url_for('site.about') }}>
-                            About
+                        <a class="navbar-item" href={{ url_for('site.admin') }}>
+                            Admin
                         </a>
                     </div>
                 </div>
@@ -64,7 +68,7 @@
             <div class="navbar-end">
                 <div class="navbar-item">
                     <div class="buttons">
-                        <a class="button is-primary">
+                        <a class="button is-primary" href={{ url_for('site.signup') }}>
                             <strong>Sign up</strong>
                         </a>
                         <a class="button is-light">
@@ -75,13 +79,13 @@
             </div>
         </div>
     </nav>
-    {% endblock nav %}
+    {% endblock %}
 
-    {% block top %}{% endblock top %}
+    {% block top %}{% endblock %}
     <section class="section">
         <div class="container">
 
-            {% block main %}{% endblock main %}
+            {% block main %}{% endblock %}
         </div>
     </section>
     {% block footer %}
@@ -95,7 +99,7 @@
         </div>
     </footer>
 
-    {% endblock footer %}
+    {% endblock %}
 </body>
 
 </html>

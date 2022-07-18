@@ -25,7 +25,7 @@ test:
 
 format:
 	isort **/*.py
-	black -l 79 **/*.py
+	black -l 79 **/**.py
 
 run_dev:
 	FLASK_APP=ElectrumFood/app.py FLASK_ENV=development flask run

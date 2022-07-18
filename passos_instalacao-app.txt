@@ -1,0 +1,15 @@
+> git clone https://github.com/dschmitz545/python-delivery.git
+
+> cd python-delivery
+
+> python3 -m venv .venv
+
+> source .venv/bin/activate
+
+> cd src
+
+> make install
+
+> created file .secrets.toml and add key SECRTE_KEY de acordo with file .secrete-example.toml
+
+> make init_db

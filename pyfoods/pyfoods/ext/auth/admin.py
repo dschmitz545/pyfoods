@@ -1,7 +1,7 @@
 from flask_admin.contrib.sqla import ModelView
 from flask_admin.actions import action
-from ElectrumFood.ext.auth.models import User
-from ElectrumFood.ext.db import db
+from pyfoods.ext.auth.models import User
+from pyfoods.ext.db import db
 from flask import flash
 
 

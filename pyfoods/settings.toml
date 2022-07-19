@@ -1,16 +1,17 @@
 [default]
 DEBUG = false
+APP_NAME = "pyfoods"
 FLASK_ADMIN_SWATCH = "united"
-ADMIN_NAME = "ElectrumFoods default"
+ADMIN_NAME = "pyfoods default"
 ADMIN_TEMPLATE_MODE = "bootstrap3"
 EXTENSIONS = [
-    "ElectrumFood.ext.db:init_app",
-    "ElectrumFood.ext.auth:init_app",
-    "ElectrumFood.ext.admin:init_app",
-    "ElectrumFood.ext.migrate:init_app",
-    "ElectrumFood.ext.cli:init_app",
-    "ElectrumFood.ext.site:init_app",
-    "ElectrumFood.ext.hooks:init_app",
+    "pyfoods.ext.db:init_app",
+    "pyfoods.ext.auth:init_app",
+    "pyfoods.ext.admin:init_app",
+    "pyfoods.ext.migrate:init_app",
+    "pyfoods.ext.cli:init_app",
+    "pyfoods.ext.site:init_app",
+    "pyfoods.ext.hooks:init_app",
 ]
 UPLOAD_FOLDER = "uploads"
 
@@ -21,12 +22,12 @@ SQLALCHEMY_TRACK_MODIFICATIONS = true
 DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
 DEBUG_TB_PROFILER_ENABLED = true
 DEBUG_TB_INTERCEPT_REDIRECTS = false
-ADMIN_NAME = "ElectrumFoods Dev"
+ADMIN_NAME = "pyfoods Dev"
 EXTENSIONS = [
     "dynaconf_merge",
-    "ElectrumFood.ext.toolbar:init_app",
+    "pyfoods.ext.toolbar:init_app",
 ]
 
 [production]
 SQLALCHEMY_TRACK_MODIFICATIONS = false
-SQLALCHEMY_DATABASE_URI = "mysql:///..."
+SQLALCHEMY_DATABASE_URI = "postgresql:///..."

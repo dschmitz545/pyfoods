@@ -1,4 +1,4 @@
-from ElectrumFood.ext.db import db
+from pyfoods.ext.db import db
 
 
 class User(db.Model):

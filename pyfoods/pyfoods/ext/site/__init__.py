@@ -1,4 +1,4 @@
-from ElectrumFood.ext.site.main import bp
+from pyfoods.ext.site.main import bp
 
 
 def init_app(app):

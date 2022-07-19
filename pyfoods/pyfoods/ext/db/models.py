@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 
-from ElectrumFood.ext.db import db
+from pyfoods.ext.db import db
 
 
 class Category(db.Model):

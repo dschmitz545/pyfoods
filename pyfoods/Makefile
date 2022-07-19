@@ -17,18 +17,18 @@ install:
 	pip install -e .['dev']
 
 init_db:
-	FLASK_APP=ElectrumFood/app.py flask create-db
-	FLASK_APP=ElectrumFood/app.py flask db upgrade
+	FLASK_APP=pyfoods/app.py flask create-db
+	FLASK_APP=pyfoods/app.py flask db upgrade
 
 test:
-	FLASK_ENV=test pytest tests/ -v --cov=ElectrumFood
+	FLASK_ENV=test pytest tests/ -v --cov=pyfoods
 
 format:
 	isort **/*.py
 	black -l 79 **/**.py
 
 run_dev:
-	FLASK_APP=ElectrumFood/app.py FLASK_ENV=development flask run
+	FLASK_APP=pyfoods/app.py FLASK_ENV=development flask run
 
 run:
-	FLASK_APP=ElectrumFood/app.py FLASK_ENV=production flask run
+	FLASK_APP=pyfoods/app.py FLASK_ENV=production flask run

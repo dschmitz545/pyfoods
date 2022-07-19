@@ -1,8 +1,8 @@
 import os
 from werkzeug.security import generate_password_hash
 from werkzeug.utils import secure_filename
-from ElectrumFood.ext.auth.models import User
-from ElectrumFood.ext.db import db
+from pyfoods.ext.auth.models import User
+from pyfoods.ext.db import db
 from flask import current_app as app
 
 ALGO = "pbkdf2:sha256"

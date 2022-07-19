@@ -1,5 +1,5 @@
 import click
-from ElectrumFood.ext.db import db
+from pyfoods.ext.db import db
 
 
 def init_app(app):

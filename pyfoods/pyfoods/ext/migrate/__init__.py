@@ -1,6 +1,6 @@
 from flask_migrate import Migrate
-from ElectrumFood.ext.db import db
-from ElectrumFood.ext.db import models  # noqa
+from pyfoods.ext.db import db
+from pyfoods.ext.db import models  # noqa
 
 migrate = Migrate()
 

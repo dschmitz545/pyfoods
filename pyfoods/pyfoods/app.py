@@ -1,6 +1,6 @@
 from flask import Flask
 
-from ElectrumFood.ext import config
+from pyfoods.ext import config
 
 
 def create_app():

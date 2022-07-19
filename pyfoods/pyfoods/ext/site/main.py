@@ -1,7 +1,7 @@
 from flask import redirect, render_template, request
 from flask import Blueprint
-from ElectrumFood.ext.auth.form import UserForm
-from ElectrumFood.ext.auth.controller import create_user, save_user_foto
+from pyfoods.ext.auth.form import UserForm
+from pyfoods.ext.auth.controller import create_user, save_user_foto
 
 
 bp = Blueprint("site", __name__)

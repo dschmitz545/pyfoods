@@ -1,6 +1,6 @@
 import click
-from ElectrumFood.ext.auth.models import User
-from ElectrumFood.ext.auth.controller import create_user
+from pyfoods.ext.auth.models import User
+from pyfoods.ext.auth.controller import create_user
 
 # TODO: mover para controller
 def list_user():

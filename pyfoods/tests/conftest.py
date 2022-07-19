@@ -1,6 +1,6 @@
 import pytest
 
-from ElectrumFood.app import create_app
+from pyfoods.app import create_app
 
 
 @pytest.fixture(scope="module")

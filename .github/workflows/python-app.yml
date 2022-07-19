@@ -5,7 +5,7 @@ name: Python application
 defaults:
   run:
     shell: bash
-    working-directory: ./src
+    working-directory: ./pyfoods
 
 on:
   push:

@@ -2,7 +2,6 @@
 
 ![Python](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10-blue?style=flat-square)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/dschmitz545/pyfoods?style=flat-square)
 
 A small delivery application, to practice Python, Flask, Database concepts
 

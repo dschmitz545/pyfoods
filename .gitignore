@@ -140,3 +140,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+passos_instalacao-app.txt
+exemplo-readme.md

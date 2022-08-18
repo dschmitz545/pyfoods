@@ -18,25 +18,33 @@ OS X & Linux:
 ```sh
 git clone https://github.com/dschmitz545/pyfoods.git
 ```
+
 ```sh
 cd pyfoods
 ```
+
 ```sh
 python3 -m venv .venv
 ```
+
 ```sh
 source .venv/bin/activate
 ```
+
 ```sh
 cd pyfoods
 ```
+
 ```sh
 make install
 ```
+
 create file `.secrets.toml` and add key **SECRET_KEY** following file example `.secrets-example.toml`
+
 ```sh
 make init_db
 ```
+
 ```sh
 make run_dev
 ```
